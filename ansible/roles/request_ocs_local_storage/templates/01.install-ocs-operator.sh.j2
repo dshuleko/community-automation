@@ -14,7 +14,7 @@ fi
 
 
 sleep 5
-oc project openshift-storage
+oc project {{ local_storage_namespace }}
 ###
 csv_counter=30
 oc get csv --no-headers=true

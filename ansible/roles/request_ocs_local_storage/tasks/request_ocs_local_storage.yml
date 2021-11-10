@@ -55,6 +55,7 @@
     dest: "{{ ocs_bastion_setup_dir }}/{{ item }}"
     mode: '0755'
   with_items:
+  - 01.install-ocs-operator.sh
   - 01.ocs-operator.yaml
   - 02.install-local-storage-operator.sh
   - 02.local-storage-operator.yaml
