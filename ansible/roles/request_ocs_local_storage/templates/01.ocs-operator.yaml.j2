@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: openshift-storage
+  name: {{ local_storage_namespace }}
 ---
 apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
