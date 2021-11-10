@@ -2,7 +2,7 @@ apiVersion: ocs.openshift.io/v1
 kind: StorageCluster
 metadata:
   name: ocs-storagecluster
-  namespace: openshift-storage
+  namespace: {{ local_storage_namespace }}
 spec:
   externalStorage: {}
   monDataDirHostPath: /var/lib/rook
